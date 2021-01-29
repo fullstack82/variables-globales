@@ -36,3 +36,22 @@ echo "<hr/>";
 
 echo gettype($nombre);  // Devuelve el tipo de la variable;
 
+echo "<hr/>";
+
+if(is_string($nombre)){
+    echo "Esa variable es un string";
+}
+
+echo "<hr/>";
+
+if(!is_float($nombre)){
+    echo "La variable nombre no es un decimal";
+}
+
+echo "<hr/>";
+// Funcion isset, con ella comprobamos si la variable existe o no en el programa;
+if(isset($edad)){
+    echo "La variable existe";
+}else{
+    echo "La variable no existe";
+}
