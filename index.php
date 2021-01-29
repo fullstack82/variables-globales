@@ -30,3 +30,25 @@ function holaMundo()
 
 
 echo holaMundo();
+
+echo "<hr/>";
+
+// Funciones variables;
+
+function buenosDias(){
+    return "<h1>Hola, buenos días</h1>";
+}
+
+function buenasTardes(){
+    return "<h1>Hola, buenas tardes</h1>";
+}
+
+function buenasNoches(){
+    return "<h1>Hola, buenas noches</h1>";
+}
+
+
+$horario = "Dias";
+$miFuncion = "buenos".$horario;
+
+echo $miFuncion();
