@@ -38,6 +38,7 @@ echo gettype($nombre);  // Devuelve el tipo de la variable;
 
 echo "<hr/>";
 
+// Detectar tipado;
 if(is_string($nombre)){
     echo "Esa variable es un string";
 }
@@ -49,9 +50,27 @@ if(!is_float($nombre)){
 }
 
 echo "<hr/>";
-// Funcion isset, con ella comprobamos si la variable existe o no en el programa;
-if(isset($edad)){
+// Comprobar si existe una variable;Funcion isset, con ella comprobamos si la variable existe o no en el programa;
+
+if(isset($nombre)){
     echo "La variable existe";
 }else{
     echo "La variable no existe";
 }
+echo "<hr/>";
+
+
+// Limpiar espacios
+$frase = "     mi contenido     ";
+
+var_dump(trim($frase)); 
+
+/* Funcion trim(), le paso los parametros de la variable que quiero limpiar,(de un string)
+* por delante y por detras; de forma que podemos sanear muchisimo el contenido de las variables;
+* Se suele usar mucho en php para los formularios, para los espacios que pueda haber incluido el usuario, por delante o por detras;
+* queda de una manera mucho mas limpia en la base de datos;
+*/
+
+// 
+
+
