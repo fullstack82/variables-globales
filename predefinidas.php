@@ -98,3 +98,8 @@ $frase = "La vida es bella";
 echo strpos($frase, "b");
 
 echo "<hr/>";
+
+// Reemplazar el contenido de un string;
+$frase = str_replace("vida", "moto", $frase);
+echo $frase;
+
