@@ -71,6 +71,30 @@ var_dump(trim($frase));
 * queda de una manera mucho mas limpia en la base de datos;
 */
 
-// 
+// Eliminar variables / indices de arrays;
+$year = 2021;
+unset($year); // Elimina la variable
+
+echo "<hr/>";
+// Comprobar variable vacia (empty) te dice si la variable tiene contenido o no;
+$texto = false;
+if(empty($texto)){
+    echo "La variable texto esta vacia";
+}else{
+    echo "La variable tiene contenido";
+}
+
+echo "<hr/>";
 
 
+// Contar caracteres de un string;
+$cadena = "12345";
+echo strlen($cadena);
+echo "<hr/>";
+
+
+// Encontrar caracter;
+$frase = "La vida es bella";
+echo strpos($frase, "b");
+
+echo "<hr/>";
