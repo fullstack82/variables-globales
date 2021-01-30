@@ -102,4 +102,8 @@ echo "<hr/>";
 // Reemplazar el contenido de un string;
 $frase = str_replace("vida", "moto", $frase);
 echo $frase;
-
+echo "<hr/>";
+// Mayusculas y minisculas;
+echo strtolower($frase);  // Convertilas a minusculas;
+echo "<hr/>";
+echo strtoupper($frase);  // Convertirlas a mayusculas;
